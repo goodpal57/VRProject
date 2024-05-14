@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  
+  <title>Juice Wrld Memorial</title>
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js">  </script>
+  <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js">  </script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+  <script src="game.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <a-scene start-game physics = "debug: true; friction: 0.2; restitution: 0.8; gravity: -11;">
+
+        <a-entity position="0 1.8 0" movement-controls kinematic-body="radius: 1.8">
+        <a-entity camera look-controls position="0 1.8 0"></a-entity>
+        </a-entity>
+        <a-sky src = "images.jpeg"></a-sky>
+        <a-plane static-body opacity = "1" color = "grey" rotation = "-90 0 0" width="5000" height="30"></a-plane>
+        <a-gltf-model src ="simple_concert_stage/scene.gltf" scale = "0.05 0.05 0.05"></a-gltf-model>
+        <a-gltf-model src = "trap_rap_ff/scene.gltf" scale = "5 5 5" position = "0 6 -20" ></a-gltf-model></a-gltf-model>
+        <a-gltf-model src = "cute_cartoon_rapper_god_character/scene.gltf" scale = "7 7 7" position = "5 6 -20"></a-gltf-model></a-gltf-model>
+        <a-gltf-model src = "xxxtentacion_3d_model/scene.gltf" scale = "5 5 5" position = "-5 7 -20"></a-gltf-model></a-gltf-model>
+        <a-gltf-model src = "wip_-_lowpoly_people_-_2/scene.gltf" scale = ".05 .05 .05"></a-gltf-model></a-gltf-model>
+        <a-gltf-model src = "wip_-_lowpoly_people_-_2/scene.gltf" scale = ".05 .05 .05" position = "3 0 -7s"></a-gltf-model></a-gltf-model>
+
+
+  </a-scene>
+</body>
+
+</html>
